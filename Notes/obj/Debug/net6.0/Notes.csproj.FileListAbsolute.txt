@@ -1,0 +1,11 @@
+D:\PERSONAL\Programming Projects\NoteGuard\Notes\bin\Debug\net6.0\Notes.deps.json
+D:\PERSONAL\Programming Projects\NoteGuard\Notes\bin\Debug\net6.0\Notes.dll
+D:\PERSONAL\Programming Projects\NoteGuard\Notes\bin\Debug\net6.0\Notes.pdb
+D:\PERSONAL\Programming Projects\NoteGuard\Notes\obj\Debug\net6.0\Notes.GeneratedMSBuildEditorConfig.editorconfig
+D:\PERSONAL\Programming Projects\NoteGuard\Notes\obj\Debug\net6.0\Notes.AssemblyInfoInputs.cache
+D:\PERSONAL\Programming Projects\NoteGuard\Notes\obj\Debug\net6.0\Notes.AssemblyInfo.cs
+D:\PERSONAL\Programming Projects\NoteGuard\Notes\obj\Debug\net6.0\Notes.csproj.CoreCompileInputs.cache
+D:\PERSONAL\Programming Projects\NoteGuard\Notes\obj\Debug\net6.0\Notes.dll
+D:\PERSONAL\Programming Projects\NoteGuard\Notes\obj\Debug\net6.0\refint\Notes.dll
+D:\PERSONAL\Programming Projects\NoteGuard\Notes\obj\Debug\net6.0\Notes.pdb
+D:\PERSONAL\Programming Projects\NoteGuard\Notes\obj\Debug\net6.0\ref\Notes.dll

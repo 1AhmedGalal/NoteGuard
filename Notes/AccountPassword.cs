@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Notes
+﻿namespace Notes
 {
-    internal class AccountPassword
+    public sealed record AccountPassword : Note
     {
+        private string _websiteName;
+        private string _emailOrUsername;
+        private string _password;
+
+        public string WebsiteName { get { return _websiteName; } }
+        public string EmailOrUserName { get { return _emailOrUsername; } }
+        public string Password { get { return _password; } }
+
+        public AccountPassword(string? websiteName, string? emailOrUsername, string? password) : base()
+        {
+            _websiteName = websiteName ?? "";
+            _emailOrUsername = emailOrUsername ?? "";
+            _password = password ?? "";
+        }
     }
 }
