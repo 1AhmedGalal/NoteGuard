@@ -1,0 +1,16 @@
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\bin\Debug\net6.0-windows\NoteGuardLauncher.exe
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\bin\Debug\net6.0-windows\NoteGuardLauncher.deps.json
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\bin\Debug\net6.0-windows\NoteGuardLauncher.runtimeconfig.json
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\bin\Debug\net6.0-windows\NoteGuardLauncher.dll
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\bin\Debug\net6.0-windows\NoteGuardLauncher.pdb
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.Form1.resources
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.csproj.GenerateResource.cache
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.GeneratedMSBuildEditorConfig.editorconfig
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.AssemblyInfoInputs.cache
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.AssemblyInfo.cs
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.csproj.CoreCompileInputs.cache
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.dll
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\refint\NoteGuardLauncher.dll
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.pdb
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.genruntimeconfig.cache
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\ref\NoteGuardLauncher.dll
