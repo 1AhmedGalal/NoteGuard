@@ -2,7 +2,7 @@
 {
     public interface IFileSerializable<T>
     {
-        void SaveToFile(string filePath, ref ICollection<T> collection);
-        void LoadFromFile(string filePath, ref ICollection<T> collection);
+        void SaveToFile(string filePath, ICollection<T>? collection);
+        ICollection<T>? LoadFromFile(string filePath);
     }
 }

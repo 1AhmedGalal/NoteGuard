@@ -9,19 +9,25 @@ namespace FileTools
 {
     public class JsonFileSerializer<T> : IFileSerializable<T>
     {
-        public void LoadFromFile(string filePath, ref ICollection<T>? collection)
+        public ICollection<T>? LoadFromFile(string filePath)
         {
+            ICollection<T>? collection = null;
             string json = File.ReadAllText(filePath);
 
             if (json is not null)
-            {
                 collection = JsonSerializer.Deserialize<ICollection<T>>(json);
-            }
+            
+            return collection;
         }
 
-        public void SaveToFile(string filePath, ref ICollection<T>? collection)
+        public void SaveToFile(string filePath, ICollection<T>? collection)
         {
-            throw new NotImplementedException();
+            if (collection is null)
+                throw new Exception("No Collection Was Found");
+
+            string json = JsonSerializer.Serialize(collection, new JsonSerializerOptions { WriteIndented = true});
+            File.WriteAllText(filePath, json);
+
         }
     }
 }

@@ -18,7 +18,7 @@ namespace Notes
             _keywords = new List<Keyword>();
             _populateKeyWords();
         }
-
+        public bool hasKeyword(Keyword keyword) => _keywords.Contains(keyword);
         private void _populateKeyWords()
         {
             bool isKeyword(char c) => c != ' ' && c != '\r' && c != '\n' && c != '\b' && c != '\t';
