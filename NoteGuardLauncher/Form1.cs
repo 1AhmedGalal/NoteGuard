@@ -5,12 +5,14 @@ namespace NoteGuardLauncher
     public partial class Form1 : Form
     {
 
-        private NoteStorage notesStorage;
+        private NoteStorage _noteStorage;
+        public string? FolderPath { get; private set; }
 
         public Form1()
         {
+            FolderPath = null;
+            _noteStorage = NoteStorage.Instance;
             InitializeComponent();
-            notesStorage = NoteStorage.Instance;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -30,23 +32,54 @@ namespace NoteGuardLauncher
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string? folderPath = null;
 
-            if (comboBox2.SelectedIndex == 0)
+            switch (comboBox2.SelectedIndex)
             {
-                folderPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            }
-            else if(comboBox2.SelectedIndex == 1) 
-            {
-                folderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            }
-            else
-            {
-                MessageBox.Show("Please Choose A Valid File Path", "Warning");
-                return;
+                case 0:
+                    FolderPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                    break;
+                case 1:
+                    FolderPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+                    break;
+                default:
+                    MessageBox.Show("Please Choose A Valid File Path", "Warning");
+                    return;
             }
 
-            notesStorage.LoadAllNotes(folderPath);
+            _noteStorage.LoadAllNotes(FolderPath);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            switch (comboBox1.SelectedIndex)
+            {
+                case 0:
+                    NewStandardNote newStandardNote = new NewStandardNote(this);
+                    this.Hide();
+                    newStandardNote.Show();
+                    break;
+
+                case 1:
+                    NewPasswordNote newPasswordNote = new NewPasswordNote(this);
+                    this.Hide();
+                    newPasswordNote.Show();
+                    break;
+
+                case 2:
+                    NewLinkNote newLinkNote = new NewLinkNote(this);
+                    this.Hide();
+                    newLinkNote.Show();
+                    break;
+
+                default:
+                    MessageBox.Show("Please Choose A Valid Type", "Warning");
+                    return;
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

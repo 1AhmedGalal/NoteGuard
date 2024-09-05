@@ -22,3 +22,6 @@ D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\bin\Debug\net6.0-wi
 D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\bin\Debug\net6.0-windows\NoteHandlers.pdb
 D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\bin\Debug\net6.0-windows\Notes.pdb
 D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.csproj.CopyComplete
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.NewStandardNote.resources
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.NewPasswordNote.resources
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.NewLinkNote.resources

@@ -35,6 +35,7 @@
             label2 = new Label();
             comboBox1 = new ComboBox();
             comboBox2 = new ComboBox();
+            button4 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -55,6 +56,7 @@
             button2.TabIndex = 1;
             button2.Text = "Make New";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -73,7 +75,6 @@
             label1.Size = new Size(162, 20);
             label1.TabIndex = 4;
             label1.Text = "Select Saving Directory";
-            //label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -100,11 +101,22 @@
             comboBox2.Size = new Size(151, 28);
             comboBox2.TabIndex = 9;
             // 
+            // button4
+            // 
+            button4.Location = new Point(136, 418);
+            button4.Name = "button4";
+            button4.Size = new Size(519, 29);
+            button4.TabIndex = 10;
+            button4.Text = "Exit";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button4);
             Controls.Add(comboBox2);
             Controls.Add(comboBox1);
             Controls.Add(label2);
@@ -128,5 +140,6 @@
         private Label label2;
         private ComboBox comboBox1;
         private ComboBox comboBox2;
+        private Button button4;
     }
 }

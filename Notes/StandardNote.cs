@@ -1,15 +1,17 @@
 ﻿using System.Text;
+using System.Text.Json.Serialization;
 
 namespace Notes
 {
     public sealed record StandardNote : Note
     {
+        private List<Keyword> _keywords;
         private string _subject;
         private string _content;
-        private List<Keyword> _keywords;
-
+        
         public string Subject { get { return _subject; } }
         public string Content { get { return _content; } }
+        public List<Keyword> Keywords { get { return _keywords; } }
 
         public StandardNote(string? subject, string? content) : base()
         {
@@ -38,6 +40,7 @@ namespace Notes
 
                     _keywords.Add(new Keyword(sb.ToString()));
                     sb.Clear();
+                    i--;
                 }
             }
         }

@@ -29,7 +29,7 @@ namespace FileTools
             if (collection is null)
                 throw new Exception("No Collection Was Found");
 
-            string json = JsonSerializer.Serialize(collection, new JsonSerializerOptions { WriteIndented = true});
+            string json = JsonSerializer.Serialize(collection, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(filePath, json);
 
         }

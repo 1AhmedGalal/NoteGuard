@@ -9,10 +9,10 @@
 
         public string WebsiteUrl { get { return _websiteUrl; } }
 
-        public WebsiteLink(string? websiteName, string? websiteLink) : base()
+        public WebsiteLink(string? websiteName, string? websiteUrl) : base()
         {
             this._websiteName = websiteName ?? "";
-            this._websiteUrl = websiteLink ?? "";
+            this._websiteUrl = websiteUrl ?? "";
         }
     }
 }
