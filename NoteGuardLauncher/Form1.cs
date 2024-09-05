@@ -5,13 +5,20 @@ namespace NoteGuardLauncher
     public partial class Form1 : Form
     {
 
-        private NoteStorage _noteStorage;
+        private NoteStorage _noteStorage;      
+        private NewStandardNote _newStandardNote;
+        private NewPasswordNote _newPasswordNote;
+        private NewLinkNote _newLinkNote ;
+                                                                     
         public string? FolderPath { get; private set; }
 
         public Form1()
         {
             FolderPath = null;
             _noteStorage = NoteStorage.Instance;
+            _newStandardNote = new NewStandardNote(this);
+            _newPasswordNote = new NewPasswordNote(this);
+            _newLinkNote = new NewLinkNote(this);
             InitializeComponent();
         }
 
@@ -54,21 +61,18 @@ namespace NoteGuardLauncher
             switch (comboBox1.SelectedIndex)
             {
                 case 0:
-                    NewStandardNote newStandardNote = new NewStandardNote(this);
                     this.Hide();
-                    newStandardNote.Show();
+                    _newStandardNote.Show();
                     break;
 
                 case 1:
-                    NewPasswordNote newPasswordNote = new NewPasswordNote(this);
                     this.Hide();
-                    newPasswordNote.Show();
+                    _newPasswordNote.Show();
                     break;
 
                 case 2:
-                    NewLinkNote newLinkNote = new NewLinkNote(this);
                     this.Hide();
-                    newLinkNote.Show();
+                    _newLinkNote.Show();
                     break;
 
                 default:
@@ -80,6 +84,11 @@ namespace NoteGuardLauncher
         private void button4_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
