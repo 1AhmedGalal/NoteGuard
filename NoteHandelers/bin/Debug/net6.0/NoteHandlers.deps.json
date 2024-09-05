@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "NoteHandlers/1.0.0": {
+        "dependencies": {
+          "FileTools": "1.0.0",
+          "Notes": "1.0.0"
+        },
+        "runtime": {
+          "NoteHandlers.dll": {}
+        }
+      },
+      "FileTools/1.0.0": {
+        "runtime": {
+          "FileTools.dll": {}
+        }
+      },
+      "Notes/1.0.0": {
+        "runtime": {
+          "Notes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NoteHandlers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FileTools/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Notes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -14,3 +14,11 @@ D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-wi
 D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.pdb
 D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.genruntimeconfig.cache
 D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\ref\NoteGuardLauncher.dll
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.csproj.AssemblyReference.cache
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\bin\Debug\net6.0-windows\FileTools.dll
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\bin\Debug\net6.0-windows\NoteHandlers.dll
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\bin\Debug\net6.0-windows\Notes.dll
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\bin\Debug\net6.0-windows\FileTools.pdb
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\bin\Debug\net6.0-windows\NoteHandlers.pdb
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\bin\Debug\net6.0-windows\Notes.pdb
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.csproj.CopyComplete

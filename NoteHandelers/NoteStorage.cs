@@ -49,7 +49,7 @@ namespace NoteHandlers
             return GetEnumerator();
         }
 
-        public void saveAllNotes(string folderPath)
+        public void SaveAllNotes(string folderPath)
         {
             if (NoteTypeHandled is null)
             {
@@ -76,33 +76,23 @@ namespace NoteHandlers
             
         }
 
-        public void loadAllNotes(string folderPath)
+        public void LoadAllNotes(string folderPath)
         {
-            if (NoteTypeHandled is null)
-            {
-                throw new Exception("Please Choose A Type");
-            }
-            else if (NoteTypeHandled == NoteType.Standard)
-            {
-                IFileSerializable<StandardNote> fileSerializable = new JsonFileSerializer<StandardNote>();
-                string filePath = folderPath + @"\standard.json";
-                _standardNotes = (List<StandardNote>?) fileSerializable.LoadFromFile(filePath);
-            }
-            else if (NoteTypeHandled == NoteType.AccountPassword)
-            {
-                IFileSerializable<AccountPassword> fileSerializable = new JsonFileSerializer<AccountPassword>();
-                string filePath = folderPath + @"\accountPasswords.json";
-                _accountPasswords = (List<AccountPassword>?)fileSerializable.LoadFromFile(filePath);
-            }
-            else if (NoteTypeHandled == NoteType.WebsiteLink)
-            {
-                IFileSerializable<WebsiteLink> fileSerializable = new JsonFileSerializer<WebsiteLink>();
-                string filePath = folderPath + @"\websiteLinks.json";
-                _websiteLinks = (List<WebsiteLink>?)fileSerializable.LoadFromFile(filePath);
-            }
+            IFileSerializable<StandardNote> fileSerializable1 = new JsonFileSerializer<StandardNote>();
+            string filePath = folderPath + @"\standard.json";
+            _standardNotes = (List<StandardNote>?)fileSerializable1.LoadFromFile(filePath) ?? new List<StandardNote>();
+
+            IFileSerializable<AccountPassword> fileSerializable2 = new JsonFileSerializer<AccountPassword>();
+            filePath = folderPath + @"\accountPasswords.json";
+            _accountPasswords = (List<AccountPassword>?)fileSerializable2.LoadFromFile(filePath) ?? new List<AccountPassword>();
+
+            IFileSerializable<WebsiteLink> fileSerializable3 = new JsonFileSerializer<WebsiteLink>();
+            filePath = folderPath + @"\websiteLinks.json";
+            _websiteLinks = (List<WebsiteLink>?)fileSerializable3.LoadFromFile(filePath) ?? new List<WebsiteLink>();
+
         }
 
-        public void addNote(Note note)
+        public void AddNote(Note note)
         {
             if(note is StandardNote standardNote)
             {
@@ -122,7 +112,7 @@ namespace NoteHandlers
             }
         }
 
-        public void removeNote(Note note)
+        public void RemoveNote(Note note)
         {
             if (note is StandardNote standardNote)
             {

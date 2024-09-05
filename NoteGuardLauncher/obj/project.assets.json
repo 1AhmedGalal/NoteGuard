@@ -1,11 +1,66 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "FileTools/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FileTools.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileTools.dll": {}
+        }
+      },
+      "NoteHandlers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FileTools": "1.0.0",
+          "Notes": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NoteHandlers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NoteHandlers.dll": {}
+        }
+      },
+      "Notes/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Notes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Notes.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "FileTools/1.0.0": {
+      "type": "project",
+      "path": "../FileTools/FileTools.csproj",
+      "msbuildProject": "../FileTools/FileTools.csproj"
+    },
+    "NoteHandlers/1.0.0": {
+      "type": "project",
+      "path": "../NoteHandelers/NoteHandlers.csproj",
+      "msbuildProject": "../NoteHandelers/NoteHandlers.csproj"
+    },
+    "Notes/1.0.0": {
+      "type": "project",
+      "path": "../Notes/Notes.csproj",
+      "msbuildProject": "../Notes/Notes.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "FileTools >= 1.0.0",
+      "NoteHandlers >= 1.0.0",
+      "Notes >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Dell\\.nuget\\packages\\": {},
@@ -39,7 +94,17 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\PERSONAL\\Programming Projects\\NoteGuard\\FileTools\\FileTools.csproj": {
+              "projectPath": "D:\\PERSONAL\\Programming Projects\\NoteGuard\\FileTools\\FileTools.csproj"
+            },
+            "D:\\PERSONAL\\Programming Projects\\NoteGuard\\NoteHandelers\\NoteHandlers.csproj": {
+              "projectPath": "D:\\PERSONAL\\Programming Projects\\NoteGuard\\NoteHandelers\\NoteHandlers.csproj"
+            },
+            "D:\\PERSONAL\\Programming Projects\\NoteGuard\\Notes\\Notes.csproj": {
+              "projectPath": "D:\\PERSONAL\\Programming Projects\\NoteGuard\\Notes\\Notes.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

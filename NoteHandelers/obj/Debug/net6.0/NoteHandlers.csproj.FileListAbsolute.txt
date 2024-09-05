@@ -1,0 +1,17 @@
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\bin\Debug\net6.0\NoteHandlers.deps.json
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\bin\Debug\net6.0\NoteHandlers.dll
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\bin\Debug\net6.0\NoteHandlers.pdb
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\bin\Debug\net6.0\FileTools.dll
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\bin\Debug\net6.0\Notes.dll
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\bin\Debug\net6.0\FileTools.pdb
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\bin\Debug\net6.0\Notes.pdb
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\obj\Debug\net6.0\NoteHandlers.csproj.AssemblyReference.cache
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\obj\Debug\net6.0\NoteHandlers.GeneratedMSBuildEditorConfig.editorconfig
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\obj\Debug\net6.0\NoteHandlers.AssemblyInfoInputs.cache
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\obj\Debug\net6.0\NoteHandlers.AssemblyInfo.cs
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\obj\Debug\net6.0\NoteHandlers.csproj.CoreCompileInputs.cache
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\obj\Debug\net6.0\NoteHandlers.csproj.CopyComplete
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\obj\Debug\net6.0\NoteHandlers.dll
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\obj\Debug\net6.0\refint\NoteHandlers.dll
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\obj\Debug\net6.0\NoteHandlers.pdb
+D:\PERSONAL\Programming Projects\NoteGuard\NoteHandelers\obj\Debug\net6.0\ref\NoteHandlers.dll

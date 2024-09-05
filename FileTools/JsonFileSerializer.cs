@@ -12,9 +12,13 @@ namespace FileTools
         public ICollection<T>? LoadFromFile(string filePath)
         {
             ICollection<T>? collection = null;
+
+            if(!File.Exists(filePath))
+                File.CreateText(filePath);
+            
             string json = File.ReadAllText(filePath);
 
-            if (json is not null)
+            if (json is not null && json != "")
                 collection = JsonSerializer.Deserialize<ICollection<T>>(json);
             
             return collection;

@@ -16,7 +16,7 @@ namespace NoteHandlers
             noteStorage.NoteTypeHandled = NoteType.Standard;
             foreach(StandardNote note in noteStorage)
             {
-                if(note.hasKeyword(_keyword))
+                if(note.HasKeyword(_keyword))
                     yield return note;
             }
         }

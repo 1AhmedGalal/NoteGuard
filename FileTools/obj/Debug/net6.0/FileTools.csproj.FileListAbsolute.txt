@@ -1,0 +1,11 @@
+D:\PERSONAL\Programming Projects\NoteGuard\FileTools\bin\Debug\net6.0\FileTools.deps.json
+D:\PERSONAL\Programming Projects\NoteGuard\FileTools\bin\Debug\net6.0\FileTools.dll
+D:\PERSONAL\Programming Projects\NoteGuard\FileTools\bin\Debug\net6.0\FileTools.pdb
+D:\PERSONAL\Programming Projects\NoteGuard\FileTools\obj\Debug\net6.0\FileTools.GeneratedMSBuildEditorConfig.editorconfig
+D:\PERSONAL\Programming Projects\NoteGuard\FileTools\obj\Debug\net6.0\FileTools.AssemblyInfoInputs.cache
+D:\PERSONAL\Programming Projects\NoteGuard\FileTools\obj\Debug\net6.0\FileTools.AssemblyInfo.cs
+D:\PERSONAL\Programming Projects\NoteGuard\FileTools\obj\Debug\net6.0\FileTools.csproj.CoreCompileInputs.cache
+D:\PERSONAL\Programming Projects\NoteGuard\FileTools\obj\Debug\net6.0\FileTools.dll
+D:\PERSONAL\Programming Projects\NoteGuard\FileTools\obj\Debug\net6.0\refint\FileTools.dll
+D:\PERSONAL\Programming Projects\NoteGuard\FileTools\obj\Debug\net6.0\FileTools.pdb
+D:\PERSONAL\Programming Projects\NoteGuard\FileTools\obj\Debug\net6.0\ref\FileTools.dll
