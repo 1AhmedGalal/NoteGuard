@@ -11,13 +11,13 @@ namespace Notes
 
         public string WebsiteUrl { get { return _websiteUrl; } }
 
-        [JsonConstructor]
         public WebsiteLink(string? websiteName, string? websiteUrl) : base()
         {
             this._websiteName = websiteName ?? "";
             this._websiteUrl = websiteUrl ?? "";
         }
 
+        [JsonConstructor]
         public WebsiteLink(string? websiteName, string? websiteUrl, int id) : base(id)
         {
             this._websiteName = websiteName ?? "";

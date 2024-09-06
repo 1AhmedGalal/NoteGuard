@@ -16,7 +16,7 @@
             _id = id;
         }
 
-        public int Id { get { return _id;} set { _id = value; } }
+        public int Id { get { return _id;} private set { _id = value; } }
 
     }
 }

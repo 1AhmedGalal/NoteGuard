@@ -11,7 +11,6 @@ namespace Notes
         public string EmailOrUserName { get { return _emailOrUsername; } }
         public string Password { get { return _password; } }
 
-        [JsonConstructor]
         public AccountPassword(string? websiteName, string? emailOrUsername, string? password) : base()
         {
             _websiteName = websiteName ?? "";
@@ -19,6 +18,7 @@ namespace Notes
             _password = password ?? "";
         }
 
+        [JsonConstructor]
         public AccountPassword(string? websiteName, string? emailOrUsername, string? password, int id) : base(id)
         {
             _websiteName = websiteName ?? "";

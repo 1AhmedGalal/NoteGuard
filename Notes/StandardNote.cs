@@ -13,7 +13,6 @@ namespace Notes
         public string Content { get { return _content; } }
         public List<Keyword> Keywords { get { return _keywords; } }
 
-        [JsonConstructor]
         public StandardNote(string? subject, string? content) : base()
         {
             _subject = subject ?? "";
@@ -22,6 +21,7 @@ namespace Notes
             _populateKeyWords();
         }
 
+        [JsonConstructor]
         public StandardNote(string? subject, string? content, int id) : base(id)
         {
             _subject = subject ?? "";
