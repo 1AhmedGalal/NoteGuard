@@ -96,7 +96,7 @@ namespace NoteHandlers
         {
             if(note is StandardNote standardNote)
             {
-                _standardNotes.Add(standardNote);
+                _standardNotes!.Add(standardNote);
             }
             else if(note is WebsiteLink link)
             {
@@ -112,23 +112,44 @@ namespace NoteHandlers
             }
         }
 
-        public void RemoveNote(Note note)
+        public void RemoveNote(int idx)
         {
-            if (note is StandardNote standardNote)
-            {
-                _standardNotes.Remove(standardNote);
-            }
-            else if (note is WebsiteLink link)
-            {
-                _websiteLinks.Remove(link);
-            }
-            else if (note is AccountPassword accountPassword)
-            {
-                _accountPasswords.Remove(accountPassword);
-            }
-            else
+            if (NoteTypeHandled is null)
             {
                 throw new NotImplementedException("Invalid Type!");
+            }
+            else if (NoteTypeHandled == NoteType.Standard)
+            {
+                _standardNotes!.RemoveAt(idx);
+            }
+            else if (NoteTypeHandled == NoteType.WebsiteLink)
+            {
+                _websiteLinks!.RemoveAt(idx);
+            }
+            else if (NoteTypeHandled == NoteType.AccountPassword)
+            {
+                _accountPasswords!.RemoveAt(idx);
+            }
+            
+        }
+
+        public Note GetNote(int idx)
+        {
+            if (NoteTypeHandled is null)
+            {
+                throw new NotImplementedException("Invalid Type!");
+            }
+            else if (NoteTypeHandled == NoteType.Standard)
+            {
+                return _standardNotes![idx];
+            }
+            else if (NoteTypeHandled == NoteType.WebsiteLink)
+            {
+                return _websiteLinks![idx];
+            }
+            else 
+            {
+                return _accountPasswords![idx];
             }
         }
     }

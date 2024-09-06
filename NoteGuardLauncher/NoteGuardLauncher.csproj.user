@@ -13,5 +13,14 @@
     <Compile Update="NewStandardNote.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="OldLinkNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="OldPasswordNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="OldStandardNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

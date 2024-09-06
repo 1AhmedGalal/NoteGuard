@@ -25,3 +25,6 @@ D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-wi
 D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.NewStandardNote.resources
 D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.NewPasswordNote.resources
 D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.NewLinkNote.resources
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.OldLinkNote.resources
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.OldPasswordNote.resources
+D:\PERSONAL\Programming Projects\NoteGuard\NoteGuardLauncher\obj\Debug\net6.0-windows\NoteGuardLauncher.OldStandardNote.resources

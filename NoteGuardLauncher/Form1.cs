@@ -9,7 +9,10 @@ namespace NoteGuardLauncher
         private NewStandardNote _newStandardNote;
         private NewPasswordNote _newPasswordNote;
         private NewLinkNote _newLinkNote ;
-                                                                     
+        private OldPasswordNote _oldPasswordNote;
+        private OldLinkNote _oldLinkNote;
+        private OldStandardNote _oldStandardNote;
+
         public string? FolderPath { get; private set; }
 
         public Form1()
@@ -19,6 +22,9 @@ namespace NoteGuardLauncher
             _newStandardNote = new NewStandardNote(this);
             _newPasswordNote = new NewPasswordNote(this);
             _newLinkNote = new NewLinkNote(this);
+            _oldPasswordNote = new OldPasswordNote(this);
+            _oldLinkNote = new OldLinkNote(this);
+            _oldStandardNote = new OldStandardNote(this);
             InitializeComponent();
         }
 
@@ -88,7 +94,27 @@ namespace NoteGuardLauncher
 
         private void button3_Click(object sender, EventArgs e)
         {
+            switch (comboBox1.SelectedIndex)
+            {
+                case 0:
+                    this.Hide();
+                    _oldStandardNote.Show();
+                    break;
 
+                case 1:
+                    this.Hide();
+                    _oldPasswordNote.Show();
+                    break;
+
+                case 2:
+                    this.Hide();
+                    _oldLinkNote.Show();
+                    break;
+
+                default:
+                    MessageBox.Show("Please Choose A Valid Type", "Warning");
+                    return;
+            }
         }
     }
 }
