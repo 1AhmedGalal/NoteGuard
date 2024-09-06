@@ -13,6 +13,7 @@ namespace Notes
         public string Content { get { return _content; } }
         public List<Keyword> Keywords { get { return _keywords; } }
 
+        [JsonConstructor]
         public StandardNote(string? subject, string? content) : base()
         {
             _subject = subject ?? "";
@@ -20,6 +21,15 @@ namespace Notes
             _keywords = new List<Keyword>();
             _populateKeyWords();
         }
+
+        public StandardNote(string? subject, string? content, int id) : base(id)
+        {
+            _subject = subject ?? "";
+            _content = content ?? "";
+            _keywords = new List<Keyword>();
+            _populateKeyWords();
+        }
+
         public bool HasKeyword(Keyword keyword) => _keywords.Contains(keyword);
         private void _populateKeyWords()
         {

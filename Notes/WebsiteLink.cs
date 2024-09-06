@@ -1,4 +1,6 @@
-﻿namespace Notes
+﻿using System.Text.Json.Serialization;
+
+namespace Notes
 {
     public sealed record WebsiteLink : Note
     {
@@ -9,7 +11,14 @@
 
         public string WebsiteUrl { get { return _websiteUrl; } }
 
+        [JsonConstructor]
         public WebsiteLink(string? websiteName, string? websiteUrl) : base()
+        {
+            this._websiteName = websiteName ?? "";
+            this._websiteUrl = websiteUrl ?? "";
+        }
+
+        public WebsiteLink(string? websiteName, string? websiteUrl, int id) : base(id)
         {
             this._websiteName = websiteName ?? "";
             this._websiteUrl = websiteUrl ?? "";

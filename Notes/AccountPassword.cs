@@ -1,4 +1,6 @@
-﻿namespace Notes
+﻿using System.Text.Json.Serialization;
+
+namespace Notes
 {
     public sealed record AccountPassword : Note
     {
@@ -9,7 +11,15 @@
         public string EmailOrUserName { get { return _emailOrUsername; } }
         public string Password { get { return _password; } }
 
+        [JsonConstructor]
         public AccountPassword(string? websiteName, string? emailOrUsername, string? password) : base()
+        {
+            _websiteName = websiteName ?? "";
+            _emailOrUsername = emailOrUsername ?? "";
+            _password = password ?? "";
+        }
+
+        public AccountPassword(string? websiteName, string? emailOrUsername, string? password, int id) : base(id)
         {
             _websiteName = websiteName ?? "";
             _emailOrUsername = emailOrUsername ?? "";

@@ -88,7 +88,8 @@ namespace NoteGuardLauncher
 
             if (comboBox1.SelectedIndex >= 0)
             {
-                WebsiteLink updatedNote = new WebsiteLink(comboBox1.Text, textBox1.Text);
+                WebsiteLink? oldNote = _noteStorage.GetNote(comboBox1.SelectedIndex) as WebsiteLink;
+                WebsiteLink updatedNote = new WebsiteLink(comboBox1.Text, textBox1.Text, oldNote!.Id);
                 _noteStorage.RemoveNote(comboBox1.SelectedIndex);
                 _noteStorage.AddNote(updatedNote);
                 _noteStorage.SaveAllNotes(_form1.FolderPath!);

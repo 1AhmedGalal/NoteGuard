@@ -10,7 +10,13 @@
             _id = Convert.ToInt32(Math.Floor(seconds));
         }
 
-        public int Id { get { return _id;} }
+        public Note(int id)
+        {
+            double seconds = DateTime.Now.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
+            _id = id;
+        }
+
+        public int Id { get { return _id;} set { _id = value; } }
 
     }
 }

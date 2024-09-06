@@ -66,7 +66,8 @@ namespace NoteGuardLauncher
 
             if (comboBox1.SelectedIndex >= 0)
             {
-                AccountPassword updatedNote = new AccountPassword(comboBox1.Text, textBox2.Text, textBox3.Text);
+                AccountPassword? oldNote = _noteStorage.GetNote(comboBox1.SelectedIndex) as AccountPassword;
+                AccountPassword updatedNote = new AccountPassword(comboBox1.Text, textBox2.Text, textBox3.Text, oldNote!.Id);
                 _noteStorage.RemoveNote(comboBox1.SelectedIndex);
                 _noteStorage.AddNote(updatedNote);
                 _noteStorage.SaveAllNotes(_form1.FolderPath!);

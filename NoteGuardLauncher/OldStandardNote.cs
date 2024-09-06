@@ -80,7 +80,8 @@
 
             if (comboBox1.SelectedIndex >= 0)
             {
-                StandardNote updatedNote = new StandardNote(comboBox1.Text, textBox1.Text);
+                StandardNote? oldNote = _noteStorage.GetNote(comboBox1.SelectedIndex) as StandardNote;
+                StandardNote updatedNote = new StandardNote(comboBox1.Text, textBox1.Text, oldNote!.Id);
                 _noteStorage.RemoveNote(comboBox1.SelectedIndex);
                 _noteStorage.AddNote(updatedNote);
                 _noteStorage.SaveAllNotes(_form1.FolderPath!);
